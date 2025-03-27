@@ -365,7 +365,7 @@ class _AddTaskState extends State<AddTask> {
                     onpressed: _pickRemainderTime,
                     hintText: reminderDateTime != null
                         ? formatTimeOfDay(
-                            )
+                           TimeOfDay.fromDateTime(reminderDateTime!) )
                         : 'Pick Time',
                   ),
                 ),
